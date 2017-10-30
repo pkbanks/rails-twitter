@@ -1,0 +1,11 @@
+
+<% @users.each do |user| %>
+	<div>
+		<%= image_tag user.picture %>
+		<%= user.name %>
+		<%= user.bio %>
+		<%= user.comments.length %>
+		<%= user.followers.length %>
+		<hr>
+	</div>
+<% end %>
